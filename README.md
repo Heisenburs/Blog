@@ -1,16 +1,32 @@
-Using mern-infrastructureto Create MERN-Stack Projects in the Future
-Here's the process to create a new MERN-Stack project that starts with the infrastructure code:
+# Blog
+## created by Jada Burs
 
-Clone the mern-infrastructure repo: git clone <url of mern-infrastructure> <name-of-project>
 
-Note that the folder created will be same as <name-of-project>instead of mern-infrastructure
+## Introduction
 
-cd <name-of-project>
-Install the Node modules: npm i
-Create a .env (touch .env) and add entries for DATABASE_URLand SECRET
-Update the "name": "mern-infrastructure"in package.json to the name of your project.
-Create a new repo on your personal GH account.
-Copy the new GH repo's URL.
-Update the remote's URL: git remote set-url origin <paste the copied GH url>
-Push for the first time: git push -u origin main
-Have fun coding your new project and don't forget to make frequent commits!
+This blog is a functioning, full-stack, single-page application using the MERN-Stack. It also uses token-based authentication and full CRUD on all blog posts created by the user.
+
+## Technologies Used
+- ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
+
+- ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+- ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+## Getting Started
+- Link to Wireframe?
+- Link to GitHub Project Board
+- Link to Deployed App
+
+## Unsolved Problems
+
+## Future Enhancements
+
+## Resources Used
+
+### README.md
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+- https://github.com/Ileriayo/markdown-badges#badges
+
