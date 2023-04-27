@@ -17,7 +17,8 @@ This blog is a functioning, full-stack, single-page application using the MERN-S
 
 ## Getting Started
 - Link to Wireframe?
-- Link to GitHub Project Board
+### Project Board
+ - https://github.com/users/Heisenburs/projects/1
 - Link to Deployed App
 
 ## Unsolved Problems
