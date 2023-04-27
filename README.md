@@ -16,9 +16,12 @@ This blog is a functioning, full-stack, single-page application using the MERN-S
 - ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 ## Getting Started
-- Link to Wireframe?
+### Wireframe 
+ - https://www.canva.com/design/DAFhTs4hfXg/TBytsMXYC0Wi8iVAXyGIdg/edit
 ### Project Board
  - https://github.com/users/Heisenburs/projects/1
+
+ ### Link to Live Site
 - Link to Deployed App
 
 ## Unsolved Problems
