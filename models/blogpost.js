@@ -18,6 +18,18 @@ const blogpostSchema = new Schema({
         maxLength: 120,
         required: true,
 
+    },
+    author: {
+        type: String,
+        required: true,
+    },
+    category: {
+        type: String,
+        enum: ['Life', 'Programming', 'Gaming', 'Travel', 'Miscellanious']
+    },
+    likes: {
+        type: Number,
+        default: 0
     }
 }, {
     timestamps: true
