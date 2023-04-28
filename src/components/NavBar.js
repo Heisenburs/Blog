@@ -13,10 +13,10 @@ function NavBar({ user, setUser }) {
       <Link to="/">HOME</Link> 
         &nbsp; | &nbsp;
 
-      <Link to="/">YOUR POSTS</Link>
+      <Link to="/myposts">YOUR POSTS</Link>
       
       &nbsp; | &nbsp;
-      <Link to="/">CREATE</Link>
+      <Link to="/posts/new">CREATE</Link>
       &nbsp;
       
       <Link to="" onClick={handleLogOut}>

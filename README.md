@@ -34,3 +34,5 @@ This blog is a functioning, full-stack, single-page application using the MERN-S
 - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
 - https://github.com/Ileriayo/markdown-badges#badges
 
+### HTML 
+- https://www.w3schools.com/howto/howto_html_file_upload_button.asp
