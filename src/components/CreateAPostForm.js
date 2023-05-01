@@ -72,4 +72,4 @@ const handleSubmit = async (e) => {
 
 }
 
-module.exports = CreateAPostForm;
+export default CreateAPostForm;
