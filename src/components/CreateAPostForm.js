@@ -21,7 +21,34 @@ function CreateAPostForm() {
     // setBlogData, spread blogData
 
     return (
-        // form goes here
+        <div>
+            <div>
+                <form autoComplete="off" onSubmit={handleSubmit}>
+                    <label>Choose An Image</label>
+                    <input type='file' id='myFile' name='filename' />
+
+                    <label>Title</label>
+                    <input type="input" name="title" value="title"/>
+
+                    <label>Body</label>
+                    <input type="textarea" name="body" value="body" rows="7" cols="40"/>
+
+                    <label>Category</label>
+                    <input list="categories" name="categories" />
+                    <datalist id="categories">
+                        <option value="Life"></option>
+                        <option value="Programming"></option>
+                        <option value="Gaming"></option>
+                        <option value="Travel"></option>
+                        <option value="Shopping"></option>
+                    </datalist>
+                    
+                    <button type="submit" disabled={disable} >Post</button>
+
+                </form>
+            </div>
+        </div>
+        
     )
 
 }

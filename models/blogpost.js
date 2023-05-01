@@ -25,7 +25,7 @@ const blogpostSchema = new Schema({
     },
     category: {
         type: String,
-        enum: ['Life', 'Programming', 'Gaming', 'Travel', 'Miscellanious']
+        enum: ['Life', 'Programming', 'Gaming', 'Travel', 'Shopping']
     },
     likes: {
         type: Number,
