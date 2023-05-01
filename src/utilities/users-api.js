@@ -25,6 +25,11 @@ export function checkToken() {
     return sendRequest(`${BASE_URL}/check-token`)
 } 
 
+//* Post
+export function post(blogInfo) {
+  return sendRequest('/posts/new', blogInfo)
+}
+
 /*--- Helper Functions ---*/
 
 async function sendRequest(url, method = 'GET', payload = null) {

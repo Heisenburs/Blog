@@ -10,7 +10,7 @@ function CreateAPostForm() {
         likes: "",
     })
 
-    //TODO: handlesubmit
+    //* handlesubmit
 const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -24,7 +24,7 @@ const handleSubmit = async (e) => {
             category: blogData.category
         }
 
-        const post = await postBlog(blogInfo); // user-services?
+        const post = await post(blogInfo); // user-services?
         // useParams(post)
     } catch (error) {
         setBlogData({...blogData, error: "Could Not Post. Sorry - Try Again"})
@@ -32,7 +32,7 @@ const handleSubmit = async (e) => {
 }
  
 
-    //TODO: handleChange
+    //* handleChange
     const handleChange = (evt) => {
         setBlogData({...blogData, [evt.target.name]: evt.target.value, error: ''})
     }

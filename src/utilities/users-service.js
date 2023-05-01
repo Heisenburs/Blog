@@ -49,6 +49,7 @@ export function logOut() {
     localStorage.removeItem('token')
 }
 
+//* Login
 export async function login(credentials) {
     const token = await usersApi.login(credentials)
     localStorage.setItem('token', token);
@@ -57,4 +58,11 @@ export async function login(credentials) {
 
 export async function checkToken() {
     return usersApi.checkToken().then(dateStr => new Date(dateStr))
+}
+
+//* Post
+export async function post() {
+    //                           ?? blogData ?
+    const post = await usersApi.post(blogInfo);
+    localStorage.setItem('post', post)
 }
