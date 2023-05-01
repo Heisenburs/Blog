@@ -33,8 +33,9 @@ const handleSubmit = async (e) => {
  
 
     //TODO: handleChange
-    // takes event 
-    // setBlogData, spread blogData
+    const handleChange = (evt) => {
+        setBlogData({...blogData, [evt.target.name]: evt.target.value, error: ''})
+    }
 
     return (
         <div>
