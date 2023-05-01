@@ -6,6 +6,7 @@
 
 import * as usersApi from './users-api';
 
+
 //* Get Token
 export function getToken() {
     const token = localStorage.getItem('token');
@@ -61,8 +62,9 @@ export async function checkToken() {
 }
 
 //* Post
-export async function post() {
-    //                           ?? blogData ?
-    const post = await usersApi.post(blogInfo);
-    localStorage.setItem('post', post)
+export async function createPost(blogInfo) {
+    const post = await usersApi.createPost(blogInfo);
+    // localStorage.setItem('post', post)
+    // send to MongoDB4
+    return post;
 }

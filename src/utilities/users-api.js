@@ -26,8 +26,8 @@ export function checkToken() {
 } 
 
 //* Post
-export function post(blogInfo) {
-  return sendRequest('/posts/new', blogInfo)
+export function createPost(blogInfo) {
+  return sendRequest('/api/posts/new', 'POST', blogInfo)
 }
 
 /*--- Helper Functions ---*/

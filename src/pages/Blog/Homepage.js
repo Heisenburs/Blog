@@ -11,4 +11,4 @@ function Homepage() {
         </div>
   )
 }
-module.exports = Homepage
+export default Homepage

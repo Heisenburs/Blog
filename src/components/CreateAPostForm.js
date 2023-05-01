@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPost } from "../utilities/users-service";
 
 function CreateAPostForm() {
     const [blogData, setBlogData] = useState({
@@ -24,7 +25,7 @@ const handleSubmit = async (e) => {
             category: blogData.category
         }
 
-        const post = await post(blogInfo); // user-services?
+        const post = await createPost(blogInfo); // user-services?
         // useParams(post)
     } catch (error) {
         setBlogData({...blogData, error: "Could Not Post. Sorry - Try Again"})

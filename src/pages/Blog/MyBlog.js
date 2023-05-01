@@ -10,4 +10,4 @@ function MyBlog() {
   )
 }
 
-module.exports = MyBlog
+export default MyBlog

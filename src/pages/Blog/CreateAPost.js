@@ -19,4 +19,4 @@ function CreateAPost() {
   )
 }
 
-module.exports = CreateAPost
+export default CreateAPost
