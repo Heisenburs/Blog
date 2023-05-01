@@ -6,4 +6,4 @@ function EditPost() {
   )
 }
 
-export default EditPost
+module.exports = EditPost

@@ -1,1 +1,1 @@
-const blogPost = require('../models/blogpost')
+const Post = require('../models/blogpost')

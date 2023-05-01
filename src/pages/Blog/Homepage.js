@@ -1,5 +1,9 @@
 import React from 'react'
 
+
+//importing a state that has all my posts 
+
+
 function Homepage() {
   return (
     <div>
@@ -7,5 +11,4 @@ function Homepage() {
         </div>
   )
 }
-
-export default Homepage
+module.exports = Homepage
