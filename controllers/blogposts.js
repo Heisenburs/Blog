@@ -4,11 +4,14 @@ const Post = require('../models/blogpost')
 //Crud
 async function createPost(req, res) {
     try {
-        
+        const blog = await Post.createPost(req.body)
+        console.log(blog);
     } catch (error) {
-        
+        res.status(400).json({ msg: e.message })  
     }
     }
+
+
 
 //cRud
 async function index(req, res) {
