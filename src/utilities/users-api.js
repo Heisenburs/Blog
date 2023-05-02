@@ -25,10 +25,7 @@ export function checkToken() {
     return sendRequest(`${BASE_URL}/check-token`)
 } 
 
-//* Post
-export function createPost(blogInfo) {
-  return sendRequest('/posts/new', 'POST', blogInfo)
-}
+
 
 /*--- Helper Functions ---*/
 

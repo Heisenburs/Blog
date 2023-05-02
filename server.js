@@ -27,7 +27,8 @@ app.use(require('./config/checkToken'));
 // * All other routes
 app.use('/api/users', require('./routes/api/users'));
 
-// app.use('/api/posts/new', require('./routes/api/posts'))
+app.use('/api/posts', require('./routes/api/posts'))
+
 
 // app.use('/api/posts', require('./routes/api/posts'))
 

@@ -1,13 +1,21 @@
 import React from 'react'
+import { useState } from 'react'
 
+import { getAllPosts } from '../../utilities/Blog/blog-services'
+import PostItem from '../../components/PostItem';
 
-//importing a state that has all my posts 
 
 
 function Homepage() {
+  const [posts, setPosts] = useState(getAllPosts())
+  console.log(posts);
   return (
     <div>
         <h1>Blog</h1>
+
+{
+  posts.map((post) => <PostItem post={post} />)
+}
         </div>
   )
 }

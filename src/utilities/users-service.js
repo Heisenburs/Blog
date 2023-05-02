@@ -61,10 +61,3 @@ export async function checkToken() {
     return usersApi.checkToken().then(dateStr => new Date(dateStr))
 }
 
-//* Post
-export async function createPost(blogInfo) {
-    const post = await usersApi.createPost(blogInfo);
-    // localStorage.setItem('post', post)
-    // send to MongoDB
-    return post;
-}

@@ -3,7 +3,9 @@ const router = express.Router();
 const postsCtrl = require('../../controllers/blogposts')
 
 // GET all posts
-router.get('/', postsCtrl.index);
+router.post('/', postsCtrl.createPost);
+router.get('/', postsCtrl.index)
+
 
 //GET specific post
 router.get('/:id', postsCtrl.show)

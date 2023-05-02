@@ -3,10 +3,14 @@ const Post = require('../models/blogpost')
 
 //Crud
 async function createPost(req, res) {
+    req.body.author = req.user.name
+    console.log(req.body);
     try {
-        const blog = await Post.createPost(req.body)
+        const blog = await Post.create(req.body)
         console.log(blog);
-    } catch (error) {
+        res.json(blog)
+    } catch (e) {
+        console.log(e);
         res.status(400).json({ msg: e.message })  
     }
     }
@@ -16,7 +20,7 @@ async function createPost(req, res) {
 //cRud
 async function index(req, res) {
     try {
-        const posts = await Post.find({}).sort('author').exec();
+        const posts = await Post.find({})
         res.status(200).json(posts);
     } catch (error) {
         res.status(400).json({ msg: e.message })
@@ -37,7 +41,7 @@ try {
 // Post.findByIdAndUpdate()
 async function updatePost(req, res) {
     try {
-        
+        const post = await Post.findByIdAndUpdate(req.params.id)
     } catch (error) {
         res.status(400).json({ msg: e.message })
     }
