@@ -37,3 +37,6 @@ This blog is a functioning, full-stack, single-page application using the MERN-S
 ### HTML 
 - https://www.w3schools.com/howto/howto_html_file_upload_button.asp
 - https://www.w3schools.com/html/html_form_input_types.asp
+
+### Express
+- https://www.geeksforgeeks.org/express-js-app-use-function/

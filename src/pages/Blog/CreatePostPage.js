@@ -5,7 +5,7 @@ function CreatePostPage() {
   return (
 <>
 
-    <h1>Write Your Own Blog Post!</h1>
+    <h1>What's On Your Mind?</h1>
 
   
    <CreateAPostForm />
@@ -13,4 +13,4 @@ function CreatePostPage() {
   )
 }
 
-export default CreatePostPage
+export default CreatePostPage;

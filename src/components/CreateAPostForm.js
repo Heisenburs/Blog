@@ -41,9 +41,9 @@ const handleSubmit = async (e) => {
     return (
         <div>
             <div>
-                <form autoComplete="off" onSubmit={handleSubmit}>
+                <form autoComplete="off" onSubmit={handleSubmit} method="POST" action="/">
                     <label>Choose An Image</label>
-                    <input type='file' id='myFile' name='filename' value={blogData.image} onChange={handleChange} required />
+                    <input type='file' id='myFile' name='filename' value={blogData.image} onChange={handleChange} />
 
                     <label>Title</label>
                     <input type="input" name="title" value={blogData.title} onChange={handleChange} required/>
@@ -51,7 +51,7 @@ const handleSubmit = async (e) => {
                     <label>Body</label>
                     <input type="textarea" name="body"  rows="7" cols="40" value={blogData.body} onChange={handleChange} required/>
 
-                    <label>Category</label>
+                    {/* <label>Category</label>
                     <input list="categories" name="categories"  value={blogData.category} onChange={handleChange} required/>
                     <datalist id="categories">
                         <option value="Life"></option>
@@ -59,7 +59,7 @@ const handleSubmit = async (e) => {
                         <option value="Gaming"></option>
                         <option value="Travel"></option>
                         <option value="Shopping"></option>
-                    </datalist>
+                    </datalist> */}
                     
                     <button type="submit">Post</button>
 

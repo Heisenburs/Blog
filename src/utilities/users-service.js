@@ -65,6 +65,6 @@ export async function checkToken() {
 export async function createPost(blogInfo) {
     const post = await usersApi.createPost(blogInfo);
     // localStorage.setItem('post', post)
-    // send to MongoDB4
+    // send to MongoDB
     return post;
 }
