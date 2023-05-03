@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 
 function LikeButton() {
   return (
     <div>
-        <button>Like</button>
+        <Button>Like</Button>
     </div>
   )
 }

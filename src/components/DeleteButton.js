@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 
 function DeleteButton() {
   return (
     <div>
-        <button>Delete</button>
+        <Button>Delete</Button>
     </div>
   )
 }
