@@ -10,6 +10,8 @@ function PostItem({post}) {
 <p>{post.title}</p>
 <p>{post.body}</p>
 <p>{post.category}</p>
+<p>{post.likes}</p>
+<p>{post.createdAt}</p>
     </div>
   )
 }

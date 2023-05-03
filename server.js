@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path'); // node module
 const favicon = require('serve-favicon');
 const logger = require('morgan');
+const cors = require('cors')
 
 const app = express();
 // development port: 3001
@@ -15,6 +16,7 @@ const PORT = process.env.PORT || 3001;
 //* Config
 // Logger middleware
 app.use(logger('dev'));
+app.use(cors());
 // JSON payload middleware (for data coming from frontend functions)
 app.use(express.json());
 // Configure both serve-favicon & static middleware
@@ -27,7 +29,7 @@ app.use(require('./config/checkToken'));
 // * All other routes
 app.use('/api/users', require('./routes/api/users'));
 
-app.use('/api/posts', require('./routes/api/posts'))
+app.use('/api/posts/', require('./routes/api/posts'))
 
 
 // app.use('/api/posts', require('./routes/api/posts'))

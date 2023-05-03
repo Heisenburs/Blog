@@ -13,10 +13,11 @@ function Homepage() {
     <div>
         <h1>Blog</h1>
 
-{
-  posts.map((post) => <PostItem post={post} />)
-}
-        </div>
+          {/* {
+            posts.map((post) => <PostItem  />
+            )
+          } */}
+   </div>
   )
 }
 export default Homepage
