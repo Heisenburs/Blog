@@ -1,9 +1,13 @@
 import React from 'react'
+import EditPostForm from '../../components/EditPostForm'
 
 function EditPost() {
   return (
-    <div>Edit Your Post</div>
+    <div>
+<EditPostForm />
+    </div>
   )
 }
 
-module.exports = EditPost
+// module.exports = EditPost;
+export default EditPost;

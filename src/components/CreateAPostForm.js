@@ -53,7 +53,7 @@ const handleSubmit = async (e) => {
                     <label>Body</label>
                     <input type="textarea" name="body"  rows="7" cols="40" value={blogData.body} onChange={handleChange} required/>
 
-                    {/* <label>Category</label> */}
+                    <label>Category</label><br/>
                     <label for="life">Life</label>
                     <input type="radio" id="life" name="category" value={blogData.category} />                 
                     <label for="programming">Programming</label>

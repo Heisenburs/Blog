@@ -1,10 +1,11 @@
 import React from 'react'
 
-function MyBlog() {
+function MyBlog({user}) {
+  console.log(user);
   return (
     <div>
         <h1>
-         My Blog   
+          {user.name}'s Blog   
         </h1>
         </div>
   )

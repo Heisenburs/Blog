@@ -21,6 +21,7 @@ async function createPost(req, res) {
 async function index(req, res) {
     try {
         const posts = await Post.find({})
+        console.log(posts);
         res.status(200).json(posts);
     } catch (error) {
         res.status(400).json({ msg: e.message })
