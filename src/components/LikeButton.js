@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap'
 function LikeButton() {
   return (
     <div>
-        <Button>Like</Button>
+        <Button className='button' variant='danger'>Like</Button>
     </div>
   )
 }

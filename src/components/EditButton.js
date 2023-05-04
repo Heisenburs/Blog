@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap'
 function EditButton() {
   return (
     <div>
-        <Button>Edit</Button>
+        <Button className='button' variant='danger'>Edit</Button>
     </div>
   )
 }

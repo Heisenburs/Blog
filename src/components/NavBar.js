@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { logOut } from "../utilities/users-service";
+import { Container } from "react-bootstrap";
 
 function NavBar({ user, setUser }) {
   const handleLogOut = () => {
@@ -7,7 +8,8 @@ function NavBar({ user, setUser }) {
     setUser(null);
   };
   return (
-    <nav>
+    <Container>
+       <nav>
  <span>Welcome, <em>{user.name}</em></span>{" " }
 
       <Link to="/">HOME</Link> 
@@ -18,11 +20,14 @@ function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="/posts/new">CREATE</Link>
       &nbsp;
+      &nbsp;
       
       <Link to="" onClick={handleLogOut}>
         Logout
       </Link>
     </nav>
+    </Container>
+   
   );
 }
 
