@@ -152,3 +152,6 @@ button[type="submit"] {
   margin: 1vmin 0 0;
 }
 
+Container {
+  gap: 1.25vmin;
+}
