@@ -17,16 +17,20 @@ This blog is a functioning, full-stack, single-page application using the MERN-S
 
 ## Getting Started
 ### Wireframe 
- - https://www.canva.com/design/DAFhTs4hfXg/TBytsMXYC0Wi8iVAXyGIdg/edit
+ - https://www.canva.com/design/DAFhTs4hfXg/tmmmr4uRbp9pyvS0WWtNuQ/view?utm_content=DAFhTs4hfXg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
 ### Project Board
  - https://github.com/users/Heisenburs/projects/1
 
  ### Link to Live Site
-- Link to Deployed App
+## https://jada-blogv1.herokuapp.com/
 
 ## Unsolved Problems
+-crUD 
 
 ## Future Enhancements
+- ability to update and delete posts
+- ability to attach images to your posts
 
 ## Resources Used
 
